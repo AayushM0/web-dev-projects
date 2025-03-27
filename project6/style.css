@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body:hover{
+    cursor: pointer;
+}
+
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsla(0, 0%, 0%, 0.85);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto;
+    height: auto;
+    width: auto; 
+    padding: 20px;  
+    
+}
+
+#display{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 50%);
+    border: 10px solid white;
+    height: 80px;
+    font-size: 1.5em;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+#value{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    
+}
+
+
+
+#clear{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(36, 100%, 50%);
+    border-radius: 10px;
+    margin: 3px;
+    margin-right: 1px;
+    padding: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    width: 60px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.25s ease;
+    transition: transform 0.25s ease;
+    position: relative;
+}
+
+#controls{
+    background-color: hsl(0, 0%, 50%);
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 20px;
+
+}
+
+#controls button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+}
+
+.operator{
+    background-color: hsl(36, 100%, 50%);
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.25s ease;
+    transition: transform 0.25s ease;
+
+}
+
+.number{
+    background-color: rgba(34, 3, 3, 0.684);
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.25s ease;
+    transition: transform 0.25s ease;
+}
+
+.operator:hover{
+    transform: scale(1.1,1.1);
+    background-color: hsl(122, 72%, 43%);
+    cursor: pointer;
+
+}
+
+.number:hover{
+    transform: scale(1.1,1.1);
+    background-color: rgba(0, 0, 0, 0.353);
+    cursor: pointer;
+}
+
+#clear:hover{
+    transform: scale(1.1,1.1);
+    background-color: hsl(36, 41%, 43%);
+    cursor: pointer;
+}
